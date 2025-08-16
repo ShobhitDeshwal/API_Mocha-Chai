@@ -1,0 +1,29 @@
+{
+  "endPoints": {
+    "post_addANewPet": "/pet",
+    "get_findByStatus": "/pet/findByStatus",
+    "put_UpdateAExistingPet": "/pet",
+    "delete_deleteAPet": "/pet/5"
+  },
+  "petpayload": {
+    "id": 10,
+    "name": "rex",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": ["string"],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  },
+  "status":{
+    "Available":"available",
+    "Pending":"pending",
+    "Sold":"sold"
+    }
+}
