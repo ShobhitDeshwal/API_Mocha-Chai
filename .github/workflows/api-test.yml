@@ -2,7 +2,8 @@ name: API Tests
 
 on:
   push:           #runs on every push to any branch
-  pull_requests:[main]  # runs for PRs
+  pull_requests:
+    branch: [main]  # runs for PRs
 
 jobs:
   test:
