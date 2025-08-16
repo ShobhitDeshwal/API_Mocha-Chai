@@ -2,7 +2,7 @@ name: API Tests
 
 on:
   push:           #runs on every push to any branch
-  pull_requests:  # runs for PRs
+  pull_requests:[main]  # runs for PRs
 
 jobs:
   test:
@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/chekcout@v4
+        uses: actions/checkout@v4
 
       - name: Setup Node.js 
         uses: actions/setup-node@v4 
